@@ -1,0 +1,14 @@
+$avatar-border-color: #ffffff;
+$avatar-border-background-color: #d3c9c9;
+
+.user-avatar {
+    border-radius: 50%;
+    border: 1px solid $avatar-border-color;
+    background-color: $avatar-border-background-color;
+    img {
+        float: center;
+        width: 1.5rem;
+        height: 1.5rem;
+    }    
+}
+

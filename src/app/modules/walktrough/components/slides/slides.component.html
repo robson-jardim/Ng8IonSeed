@@ -1,0 +1,80 @@
+<ion-content>
+    <ion-slides #mySlides pager="true" [options]="slideOpts" (ionSlideDidChange)="sliderChanges($event)">
+      <ion-slide>
+      <div class="slide slide-1">
+        <div class="skip-button">
+          <ion-button color="light" fill="clear" class="skip" (click)="skip()">Skip</ion-button>
+        </div>
+        <img src="assets/cheesecake/cake-slice.svg">
+        <div>
+          <h1 class="slideTitle">Nina Cheesecake</h1>
+          <span class="slideText">Seja bem vindo a melhor melhor cheesecake do mundo!</span>
+          <div>
+            <ion-button color="light" fill="clear" class="skip" (click)="next()">Next</ion-button>
+          </div>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="slide slide-2">
+        <div class="skip-button">
+          <ion-button color="light" fill="clear" class="skip" (click)="skip()">Skip</ion-button>
+        </div>
+        <img src="assets/cheesecake/chatting.svg" alt="">
+        <div>
+          <h1 class="slideTitle">Faça seu Pedido</h1>
+          <span class="slideText">
+            Aqui você pode utilizar nosso chat conhecer nosos produtos, tirar suas dúvidas e
+            fazer seus pedidos. Nossas Cheesecake são perfeitas para todas as ocasiões!...
+          </span>
+          <div>
+              <ion-button color="light" fill="clear" class="skip" (click)="prev()">Previous</ion-button>
+              <ion-button color="light" fill="clear" class="skip" (click)="next()">Next</ion-button>
+            </div>
+          </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="slide slide-3">
+        <div class="skip-button">
+          <ion-button color="light" fill="clear" class="skip" (click)="skip()">Skip</ion-button>
+        </div>
+        <img src="assets/cheesecake/truck.svg" alt="">
+        <div>
+          <h1 class="slideTitle">Entregamos Rapidino!</h1>
+          <span class="slideText">
+            Monte sua Nina Cheessecake agora e receba em casa ou onde você preferir. 
+            Escolha sua base e coberturas e pronto! Simples assim...
+          </span>
+          <div>
+            <ion-button color="light" fill="clear" class="skip" (click)="prev()">Previous</ion-button>
+            <ion-button color="light" fill="clear" class="skip" (click)="next()">Next</ion-button>
+          </div>
+        </div>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="slide slide-4">
+        <img src="assets/cheesecake/cheesecake.svg" alt="">
+        <div>
+          <h1 class="slideTitle">Nina Cheecake</h1>
+          <span class="slideText">
+            Uma experiência única para você que gosta de ser bem atendido. O carinho com nossos clientes 
+            e a qualidade de nossos produtos irá te supreender!
+          </span>
+        </div>
+        <div padding-vertical padding-horizontal margin-horizontal margin-vertical>
+          <ion-button color="primary" class="btnSubmit slideTitle" padding-horizontal text-uppercase
+            (click)="skip()">Vamos começar?</ion-button>
+          <div>
+            <ion-button color="light" fill="clear" class="skip" (click)="prev()">Previous</ion-button>
+          </div>
+        </div>
+      </div>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

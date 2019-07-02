@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
+
+$text: #303336;
+$light-text: #8c98a8;
+$border: #CED5E0;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/blurred_bg3.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.user-card {  
+  font: 13px/23px "Raleway", Arial, sans-serif;
+  color: $text;
+  padding: 40px 0;
+  
+}
+
+.container {
+  margin: 0 auto;
+  width: 300px;
+  height: 465px;
+  background: white;
+  border-radius: 3px;
+  position: relative
+}
+
+.information {
+  text-align: center;
+}
+
+.avatar {
+  margin: 0 auto;
+  margin: -82px auto 15px;
+  display: block;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.position {
+  font-size: 16px;
+  color: $light-text;
+  margin-bottom: 24px;
+}
+
+.stats {
+  margin: auto;
+  border-top: 1px solid $border;
+  width: 240px;
+  
+  .followers, .following, .stories {
+    display: inline-block;
+    padding: 6px 10px 0;
+  }
+  
+  .followers, .following {
+    border-right: 1px solid $border;
+  }
+  
+  .value {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .label {
+    display: block;
+    font-size: 14px;
+    color: $light-text;
+  }
+}
