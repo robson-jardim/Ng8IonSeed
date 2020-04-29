@@ -13,7 +13,6 @@
 ##                         "CMD [ \"ng\", \"start\" ]"
 ##                     ]
 ## }
-
  {
   "schemaVersion": 2,
   "templateId": "node/latest"
