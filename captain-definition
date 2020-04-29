@@ -8,8 +8,8 @@
                         "RUN npm install && npm cache clean --force",
                         "COPY ./ /usr/src/app",
                         "ENV NODE_ENV production",
-                        "ENV PORT 80",
+                        "ENV PORT 4200",
                         "EXPOSE 80",
-                        "CMD [ \"npm\", \"start\" ]"
+                        "CMD [ \"ng\", \"start\" ]"
                     ]
 }
